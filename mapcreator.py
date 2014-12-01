@@ -24,6 +24,7 @@ import os
 import os.path as PATH
 import subprocess
 import sys
+import landextraction
 
 class MapCreator:
     '''
@@ -46,7 +47,12 @@ class MapCreator:
         self.dry_run = dry_run
         
         self.logger = logging.getLogger("mapcreator")
+        self.landExtractor = landextraction.LandExtractor(self.pbf_staging_path, self.polygons_path, self.dry_run)
+
+        self.logger.info("start downloading new land polygons")
+        self.landExtractor.download_land_polygons(self.pbf_staging_path)
         
+
     def evalPart(self, subtree, source_pbf, staging_path, target_dir):
         
         error_occurred = False
@@ -72,7 +78,6 @@ class MapCreator:
                 map_start_lon = float(map_start_lon)
                 
             
-            
             # we do not need to filter the area during map creation if either a pbf was created (with a filter)
             # or the source pbf equals the current part
             area_filter = not(create_pbf or PATH.basename(source_pbf).startswith(current_part_name))
@@ -93,6 +98,8 @@ class MapCreator:
                 new_source_pbf = source_pbf
                 
             if create_map:
+                self.landExtractor.make_sea_polygon_file(staging_path + current_part_name)
+                self.landExtractor.extract_land_polygons(staging_path + current_part_name, self.pbf_staging_path)
                 try:
                     self.call_create_map(new_source_pbf, staging_path, target_dir, current_part_name, area_filter, map_start_zoom, preferred_language,
                                           storage_type, map_start_lat, map_start_lon)
@@ -196,13 +203,27 @@ class MapCreator:
                 raise ProcessingException('cannot create map %s, polygon is missing: %s' % (map_file, polygon_file_path))
             osmosis_call += ['--bp', 'clipIncompleteEntities=true','file=%s'%polygon_file_path]
         
+        # read in the sea and land areas
+        sea_path = self.landExtractor.sea_path(staging_dir + current_part_name)
+        osmosis_call += ['--rx','file=%s'%sea_path]
+        osmosis_call += ['--sort']
+        osmosis_call += ['--merge']
+
+        land_path = self.landExtractor.land_path(staging_dir + current_part_name)
+        osmosis_call += ['--rx','file=%s'%land_path]
+        osmosis_call += ['--sort']
+        osmosis_call += ['--merge']
+
+        
         # construct complete path from relative path
         map_file_path = check_create_path(self.map_staging_path + map_file)        
         osmosis_call += ['--mw','file=%s'%map_file_path]
         osmosis_call += ['type=%s'%storage_type]
         osmosis_call += ['map-start-zoom=%s'%start_zoom]
         osmosis_call += ['preferred-language=%s'%preferred_language]
-        
+        bbox = self.landExtractor.region_bbox(staging_dir + current_part_name)
+        osmosis_call += ['bbox=%s,%s,%s,%s'%(str(bbox[1]), str(bbox[0]),str(bbox[3]),str(bbox[2]))]
+
         if lat != None and lon != None:
             osmosis_call += ['map-start-position=%0.8f,%0.8f'%(lat,lon)]
                             
@@ -336,9 +357,8 @@ def main():
                
     
     ########### START PROCESSING ############
-    
+
     logger.info("start creating maps from configuration at: '%s'", options.configuration_file)
-    
     creator = MapCreator(full_osmosis_path,pbf_staging_path, map_staging_path, polygons_path,
                          initial_source_pbf, map_target_path, logging_path,
                          default_start_zoom, default_preferred_language, options.dry_run)
