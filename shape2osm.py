@@ -185,7 +185,7 @@ def start_new_file():
     file_counter += 1
     if open_file:
         close_file()
-    open_file = open("%s.%s.osm" % (file_name, file_counter), "w")
+    open_file = open("%s.osm" % (file_name), "w")
     print >>open_file, "<osm version='0.6'>"
 
 def clean_attr(val):

@@ -147,7 +147,7 @@ class LandExtractor:
         """
         returns path to land file with first extension, which should be sufficient
         """        
-        return self.land_path_base(region) + ".1.osm"
+        return self.land_path_base(region) + ".osm"
 
 
 if __name__ == '__main__':
