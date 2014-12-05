@@ -206,6 +206,8 @@
 	    <part name="chile" map-start-lat="-33.43795" map-start-lon="-70.6504"/>
 	    <part name="colombia" map-start-lat="4.59805" map-start-lon="-74.07608"/>
 	    <part name="ecuador" map-start-lat="-0.22017" map-start-lon="-78.51209"/>	    
+	    <part name="peru" map-start-lat="-12.05" map-start-lon="-77.04"/>	    
+	    <part name="uruguay" map-start-lat="-34.87" map-start-lon="-56.15"/>
 	</part>
 	
 	<part name="central-america" map-start-lat="19.4392" map-start-lon="-99.129"/>
@@ -230,6 +232,7 @@
 	    <part name="pakistan" map-start-lat="33.6929" map-start-lon="73.061"/>
 	    <part name="philippines" map-start-lat="14.592" map-start-lon="120.981"/>
 	    <part name="taiwan" map-start-lat="25.0408" map-start-lon="121.5677"/>
+	    <part name="thailand" map-start-lat="13.753" map-start-lon="100.5"/>
 	    <part name="turkmenistan" map-start-lat="37.9483" map-start-lon="58.3786"/>
 	    <part name="uzbekistan" map-start-lat="41.3134" map-start-lon="69.2833"/>
 	    <part name="vietnam" map-start-lat="21.02921" map-start-lon="105.85247"/>	  
