@@ -70,10 +70,10 @@ class LandExtractor:
 
 
 
-    def polygon_bbox(self, polygon_file):
+    def polygon_bbox(self, polygon_file, buffer=0.1):
         with open(polygon_file) as f:
             polygon = self.parse_poly(f.readlines())
-            return polygon.bounds
+            return polygon.buffer(buffer).bounds
 
 
     def sea_polygon_file(self, bbox, output):
@@ -160,7 +160,7 @@ if __name__ == '__main__':
 
     for region in ["europe", "asia", "europe/greece", "europe/ukraine"]:
         landExtractor.make_sea_polygon_file(region)
-        landExtractor.extract_land_polygons(region)
+        landExtractor.extract_land_polygons(region, "data")
 
 
 
