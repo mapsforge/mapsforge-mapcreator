@@ -8,6 +8,8 @@ from logging.handlers import RotatingFileHandler
 from logging.handlers import SMTPHandler
 import shape2osm
 
+
+
 class LandExtractor:
 
     def __init__(self, output_dir, polygon_dir, dry_run = False):
@@ -18,6 +20,8 @@ class LandExtractor:
             os.makedirs(self.output_dir)
         self.polygon_ext = ".poly"
         self.dry_run = dry_run
+        # self.landfiles = "land-polygons-complete-4326"  # there seems to be a bug in that data
+        self.landfiles = "land-polygons-split-4326"
 
     def parse_poly(self, lines):
         """ Parse an Osmosis polygon filter file.
@@ -69,12 +73,10 @@ class LandExtractor:
         return MultiPolygon(coords)
 
 
-
     def polygon_bbox(self, polygon_file, buffer=0.1):
         with open(polygon_file) as f:
             polygon = self.parse_poly(f.readlines())
-            return polygon.buffer(buffer).bounds
-
+            return polygon.buffer(buffer).intersection(self.world_polygon()).bounds
 
     def sea_polygon_file(self, bbox, output):
         template = """<osm version='0.6'>
@@ -101,6 +103,9 @@ class LandExtractor:
         with open(self.sea_path(output), "w+") as f:
             f.write(template.format(lonmin=bbox[0], latmin=bbox[1], lonmax=bbox[2], latmax=bbox[3]))
 
+    def world_polygon(self):
+        return Polygon([(-180, 90), (180, 90), (180, -90), (-180, -90), (-180, 90)])
+
     def region_bbox(self, region):
         return self.polygon_bbox(self.polygon_dir + region + self.polygon_ext)
 
@@ -114,17 +119,21 @@ class LandExtractor:
         import zipfile
         self.logger.info("Retrieving new land files")
         if not self.dry_run:
-            landfiles = "land-polygons-split-4326.zip"
-            path = os.path.join(data_dir, landfiles)
-            urllib.urlretrieve ("http://data.openstreetmapdata.com/" + landfiles, path)
+            path = os.path.join(data_dir, self.landfiles + ".zip")
+            #urllib.urlretrieve ("http://data.openstreetmapdata.com/" + self.landfiles + ".zip", path)
             zfile = zipfile.ZipFile(path)
+            print data_dir
             zfile.extractall(data_dir)
         self.logger.info("Retrieved new land files")
 
-    def extract_land_polygons(self, region, data_dir):
+    def extract_land_polygons(self, region, data_dir, simplify=0):
         import subprocess
+        simplifiy = 0.2
         bbox = self.region_bbox(region)
-        ogr_call = ["ogr2ogr", "-overwrite", "-skipfailures", "-clipsrc", str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3]), os.path.join(self.output_dir, region.replace("/", "-")), os.path.join(data_dir, "land-polygons-split-4326/land_polygons.shp")]
+        if simplify == 0:
+            ogr_call = ["ogr2ogr", "-overwrite", "-skipfailures", "-clipsrc", str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3]), os.path.join(self.output_dir, region.replace("/", "-")), os.path.join(data_dir, os.path.join(self.landfiles, "land_polygons.shp"))]
+        else:
+            ogr_call = ["ogr2ogr", "-overwrite", "-skipfailures", "-simplify", str(simplify), "-clipsrc", str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3]), os.path.join(self.output_dir, region.replace("/", "-")), os.path.join(data_dir, "land-polygons-split-4326/land_polygons.shp")]
         self.logger.debug("calling: %s"," ".join(ogr_call))
         success = subprocess.call(ogr_call)
         shape2osm.run(self.land_polygon_path(region), output_location=self.land_path_base(region))

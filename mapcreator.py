@@ -53,7 +53,7 @@ class MapCreator:
         self.landExtractor.download_land_polygons(self.pbf_staging_path)
         
 
-    def evalPart(self, subtree, source_pbf, staging_path, target_dir):
+    def evalPart(self, subtree, source_pbf, staging_path, target_dir, zoom_interval_conf, land_simplification):
         
         error_occurred = False
         
@@ -99,10 +99,9 @@ class MapCreator:
                 
             if create_map:
                 self.landExtractor.make_sea_polygon_file(staging_path + current_part_name)
-                self.landExtractor.extract_land_polygons(staging_path + current_part_name, self.pbf_staging_path)
+                self.landExtractor.extract_land_polygons(staging_path + current_part_name, self.pbf_staging_path, land_simplification)
                 try:
-                    self.call_create_map(new_source_pbf, staging_path, target_dir, current_part_name, area_filter, map_start_zoom, preferred_language,
-                                          storage_type, map_start_lat, map_start_lon)
+                    self.call_create_map(new_source_pbf, staging_path, target_dir, current_part_name, area_filter, map_start_zoom, preferred_language, zoom_interval_conf, storage_type, map_start_lat, map_start_lon)
                 except ProcessingException, e:
                     error_occurred = True
                     self.logger.warning("%s", str(e))
@@ -119,7 +118,7 @@ class MapCreator:
             new_staging_path = staging_path + child.get('name') + '/'
             
             #### RECURSION         
-            subpart_error = self.evalPart(child, new_source_pbf, new_staging_path, new_target_dir)
+            subpart_error = self.evalPart(child, new_source_pbf, new_staging_path, new_target_dir, zoom_interval_conf, land_simplification)
             error_occurred = subpart_error or error_occurred
             
             # clean up files
@@ -182,7 +181,7 @@ class MapCreator:
         except OSError,e:
             raise ProcessingException("osmosis executable not found: %s"%e)
     
-    def call_create_map(self, source_pbf, staging_dir, target_dir, current_part_name, area_filter, start_zoom,preferred_language, storage_type='ram', lat=None,lon=None):
+    def call_create_map(self, source_pbf, staging_dir, target_dir, current_part_name, area_filter, start_zoom,preferred_language, zoom_interval_conf, storage_type='ram', lat=None,lon=None):
         
         # set the path to the map file
         map_file = staging_dir + current_part_name + ".map"
@@ -218,6 +217,7 @@ class MapCreator:
         # construct complete path from relative path
         map_file_path = check_create_path(self.map_staging_path + map_file)        
         osmosis_call += ['--mw','file=%s'%map_file_path]
+        osmosis_call += ['%s'%zoom_interval_conf]
         osmosis_call += ['type=%s'%storage_type]
         osmosis_call += ['map-start-zoom=%s'%start_zoom]
         osmosis_call += ['preferred-language=%s'%preferred_language]
@@ -325,7 +325,11 @@ def main():
     map_target_path = root.get('map-target-path')
     logging_path = root.get('logging-path')
     osmosis_path = root.get('osmosis-path',default='osmosis')
-    
+    land_simplification = root.get('land-simplification', 0)
+    zoom_interval_conf = root.get('zoom-interval-conf',default='')
+    if zoom_interval_conf != "":
+        zoom_interval_conf = "zoom-interval-conf=" + zoom_interval_conf
+
     full_osmosis_path = which(osmosis_path)        
     if not full_osmosis_path:
         sys.exit("the osmosis path is not valid, must be an executable file: '%s'" %osmosis_path)
@@ -362,7 +366,7 @@ def main():
     creator = MapCreator(full_osmosis_path,pbf_staging_path, map_staging_path, polygons_path,
                          initial_source_pbf, map_target_path, logging_path,
                          default_start_zoom, default_preferred_language, options.dry_run)
-    creator.evalPart(root, initial_source_pbf, '', '')                
+    creator.evalPart(root, initial_source_pbf, '', '', zoom_interval_conf, land_simplification)                
 
 def setup_logging(logging_path, dry_run):
     

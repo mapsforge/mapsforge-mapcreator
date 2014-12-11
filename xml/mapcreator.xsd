@@ -60,5 +60,7 @@
     	<attribute name="initial-source-pbf" type="string" use="optional" default="planet.osm.pbf"></attribute>
     	<attribute name="osmosis-path" type="string" default="osmosis"></attribute>
     	<attribute name="default-preferred-language" type="string" fixed="en"></attribute>
+    	<attribute name="zoom-interval-conf" type="string" default=""></attribute>
+    	<attribute name="land-simplification" type="float" default="0"></attribute>
     </complexType>
 </schema>
