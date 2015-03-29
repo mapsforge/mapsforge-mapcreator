@@ -120,7 +120,7 @@ class LandExtractor:
         self.logger.info("Retrieving new land files")
         if not self.dry_run:
             path = os.path.join(data_dir, self.landfiles + ".zip")
-            #urllib.urlretrieve ("http://data.openstreetmapdata.com/" + self.landfiles + ".zip", path)
+            urllib.urlretrieve ("http://data.openstreetmapdata.com/" + self.landfiles + ".zip", path)
             zfile = zipfile.ZipFile(path)
             print data_dir
             zfile.extractall(data_dir)
