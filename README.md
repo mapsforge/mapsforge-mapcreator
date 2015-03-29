@@ -40,6 +40,18 @@ The second part are the maps to be created. Map definitions look like this:
 	
 A part directive specifies an extract from the original pbf file, from which either only pbf extracts are made or/and maps. For every part for which a map will be created you will need to define a start point that needs to lie within the polygon. Every part requires a correspondingly named polygon in the polygons folder (at the same depth).
 
+These are some of the more important options for each part:
+ - **name** required and needs to have a matching polygon in the polygons directory.
+ - **create-map** if a map should be created or simply a pbf extract that can be used for parts of this part (this is a speed issue, extracting everything from a top-level planet can be very slow).
+ - **create-pbf** if true will create a pbf file that can subsequently be used for parts of this part.
+ - **type** if set to hd uses less memory, but much slower
+ - **map-start-zoom** start zoom level
+ - **map-start-lat**
+ - **map-start-lon** starting position, must be within polygon
+ - **preferred-language** if creating maps for non-English environments, will take the language setting in OSM file first.
+ 
+
+For all options see https://github.com/mapsforge/mapsforge-mapcreator/blob/master/xml/mapcreator.xsd 
 
 Notes
 -----
@@ -47,6 +59,8 @@ Notes
  - You will need a working osmosis installation
  - You will need the mapsforge writer installed
  - If you are making something like a world map, you might consider the zoom-interval-config setting as well as the land-simplification setting, which reduces the number of nodes in the land borders (higher=more simplification).
+ - It might be worthwhile to first try this process without any changes applied and full planet.pbf file, to rule out any configuration problems.
+
   
 
 	
