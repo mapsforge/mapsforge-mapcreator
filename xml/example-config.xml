@@ -328,6 +328,7 @@
 	    <part name="kyrgyzstan" map-start-lat="42.909" map-start-lon="74.593"/>
 	    <part name="malaysia_singapore_brunei" map-start-lat="1.2991" map-start-lon="103.8466"/>
 	    <part name="mongolia" map-start-lat="47.9171" map-start-lon="106.9166"/>
+	    <part name="nepal" map-start-lat="27.7" map-start-lon="85.333333"/>
 	    <part name="pakistan" map-start-lat="33.6929" map-start-lon="73.061"/>
 	    <part name="philippines" map-start-lat="14.592" map-start-lon="120.981"/>
 	    <part name="taiwan" map-start-lat="25.0408" map-start-lon="121.5677"/>
