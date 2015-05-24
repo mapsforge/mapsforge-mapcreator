@@ -108,7 +108,7 @@
 
 	<!-- EUROPE -->
 	<part name="europe" create-pbf="true" create-map="false">
-		<part name="germany" create-pbf="true" type="hd" map-start-lat="52.525582" map-start-lon="13.370061">			
+		<part name="germany" create-pbf="true" type="hd" map-start-lat="52.525582" map-start-lon="13.370061">
 			<part name="baden-wuerttemberg" map-start-lat="48.784092" map-start-lon="9.181652"/>
 			<part name="bayern" map-start-lat="48.140203" map-start-lon="11.558347"/>
 			<part name="berlin" map-start-lat="52.525582" map-start-lon="13.370061" />
@@ -124,9 +124,9 @@
 			<part name="sachsen-anhalt" map-start-lat="52.130669" map-start-lon="11.628792"/>
 			<part name="sachsen" map-start-lat="51.040557" map-start-lon="13.731966"/>
 			<part name="schleswig-holstein" map-start-lat="54.314971" map-start-lon="10.13190"/>
-			<part name="thueringen" map-start-lat="50.972535" map-start-lon="11.038556"/>			
+			<part name="thueringen" map-start-lat="50.972535" map-start-lon="11.038556"/>
 		</part>
-		
+
 		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
 			<part name="alsace" map-start-lat="48.079283" map-start-lon="7.359509"></part>
 			<part name="aquitaine" map-start-lat="44.837856" map-start-lon="-0.580516"></part>
@@ -148,13 +148,13 @@
 			<part name="picardie" map-start-lat="49.894275" map-start-lon="2.295542"></part>
 			<part name="poitou-charentes" map-start-lat="46.58028" map-start-lon="0.34005"></part>
 			<part name="provence-alpes-cote-d-azur" map-start-lat="43.29534" map-start-lon="5.374632"></part>
-			<part name="rhone-alpes" map-start-lat="45.763788" map-start-lon="4.835744"></part>			
+			<part name="rhone-alpes" map-start-lat="45.763788" map-start-lon="4.835744"></part>
 		</part>
-		
+
 		<part name="great_britain" create-pbf="true" map-start-lat="51.499266" map-start-lon="-0.124787">
 			<part name="england" create-map="true" map-start-lat="51.50728" map-start-lon="-0.12766" defines-hierarchy="false">
 			    <part name="greater_london" map-start-lat="51.50728" map-start-lon="-0.12766"/>
-			</part>    
+			</part>
 			<part name="scotland" map-start-lat="55.94834" map-start-lon="-3.19327"/>
 			<part name="wales" map-start-lat="51.48353" map-start-lon="-3.18369"></part>
 		</part>
@@ -204,13 +204,13 @@
 		<part name="turkey" map-start-lat="41.005358" map-start-lon="28.978415"/>
 		<part name="ukraine" map-start-lat="50.4554" map-start-lon="30.532"/>
 		<!-- <part name="" map-start-lat="" map-start-lon=""/> -->
-		
+
 	</part>
 
 
 	<!-- NORTH AMERICA -->
 	<part name="north-america" create-map="false">
-	    
+
 	    <!-- UNITED STATES -->
 		<part name="us" create-map="false">
 			<part name="us-west" create-pbf="true" create-map="false" defines-hierarchy="false">
@@ -280,7 +280,7 @@
 			</part>
 			<part name="alaska" map-start-lat="58.302" map-start-lon="-134.4197" />
 		</part>
-		
+
 		<part name="canada" create-pbf="true" create-map="false">
 		    <part name="alberta" map-start-lat="53.5292" map-start-lon="-113.4034"/>
 		    <part name="british-columbia" map-start-lat="48.4209" map-start-lon="-123.3277"/>
@@ -294,25 +294,25 @@
 		    <part name="prince-edward-island" map-start-lat="46.2318" map-start-lon="-63.1317"/>
 		    <part name="quebec" map-start-lat="46.825" map-start-lon="-71.143"/>
 		    <part name="saskatchewan" map-start-lat="50.4622" map-start-lon="-104.6369"/>
-		    <part name="yukon" map-start-lat="60.7242" map-start-lon="-135.0559"/>		    
+		    <part name="yukon" map-start-lat="60.7242" map-start-lon="-135.0559"/>
 		</part>
 	</part>
-	
+
 	<part name="south-america" create-pbf="true" create-map="false">
 	    <part name="argentina" map-start-lat="-34.6023" map-start-lon="-58.4489"/>
 	    <part name="bolivia" map-start-lat="-19.04201" map-start-lon="-65.25634"/>
 	    <part name="brazil" map-start-lat="-15.79412" map-start-lon="-47.88267"/>
 	    <part name="chile" map-start-lat="-33.43795" map-start-lon="-70.6504"/>
 	    <part name="colombia" map-start-lat="4.59805" map-start-lon="-74.07608"/>
-	    <part name="ecuador" map-start-lat="-0.22017" map-start-lon="-78.51209"/>	    
-	    <part name="peru" map-start-lat="-12.05" map-start-lon="-77.04"/>	    
+	    <part name="ecuador" map-start-lat="-0.22017" map-start-lon="-78.51209"/>
+	    <part name="peru" map-start-lat="-12.05" map-start-lon="-77.04"/>
 	    <part name="uruguay" map-start-lat="-34.87" map-start-lon="-56.15"/>
 	</part>
-	
+
 	<part name="central-america" map-start-lat="19.4392" map-start-lon="-99.129"/>
     <part name="australia-oceania" map-start-lat="-33.8545" map-start-lon="151.2196"/>
     <part name="africa" map-start-lat="30.05" map-start-lon="31.2414"/>
-		
+
 	<part name="asia" create-pbf="true" create-map="false">
 	    <part name="azerbaijan" map-start-lat="40.3818" map-start-lon="49.8967"/>
 	    <part name="china" map-start-lat="39.9073" map-start-lon="116.3848"/>
@@ -335,6 +335,6 @@
 	    <part name="thailand" map-start-lat="13.753" map-start-lon="100.5"/>
 	    <part name="turkmenistan" map-start-lat="37.9483" map-start-lon="58.3786"/>
 	    <part name="uzbekistan" map-start-lat="41.3134" map-start-lon="69.2833"/>
-	    <part name="vietnam" map-start-lat="21.02921" map-start-lon="105.85247"/>	  
+	    <part name="vietnam" map-start-lat="21.02921" map-start-lon="105.85247"/>
 	</part>
 </mapcreator-config>
