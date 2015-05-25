@@ -128,151 +128,33 @@
 		</part>
 
 		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
-			<part name="alsace" create-pbf="true" map-start-lat="48.079283" map-start-lon="7.359509">
-				<part name="bas-rhin" map-start-lat="48.584446" map-start-lon="7.748611"/>
-				<part name="haut-rhin" map-start-lat="48.081665" map-start-lon="7.355556"/>
-			</part>
-			<part name="aquitaine" create-pbf="true" map-start-lat="44.837856" map-start-lon="-0.580516">
-				<part name="dordogne" map-start-lat="45.183334" map-start-lon="0.716667"/>
-				<part name="gironde" map-start-lat="44.838612" map-start-lon="-0.578333"/>
-				<part name="landes" map-start-lat="43.891388" map-start-lon="-0.499444"/>
-				<part name="lot-et-garonne" map-start-lat="44.204166" map-start-lon="0.619444"/>
-				<part name="pyrenees-atlantiques" map-start-lat="43.301666" map-start-lon="-0.368611"/>
-			</part>
-			<part name="auvergne" create-pbf="true" map-start-lat="45.777521" map-start-lon="3.086557">
-				<part name="allier" map-start-lat="46.565277" map-start-lon="3.316667"/>
-				<part name="cantal" map-start-lat="44.926109" map-start-lon="2.440556"/>
-				<part name="haute-loire" map-start-lat="45.044167" map-start-lon="3.885833"/>
-				<part name="puy-de-dome" map-start-lat="45.780556" map-start-lon="3.0875"/>
-			</part>
-			<part name="basse-normandie" create-pbf="true" map-start-lat="49.182643" map-start-lon="-0.370638">
-				<part name="calvados" map-start-lat="49.183056" map-start-lon="-0.369444"/>
-				<part name="manche" map-start-lat="49.115555" map-start-lon="-1.09"/>
-				<part name="orne" map-start-lat="48.433334" map-start-lon="0.1"/>
-			</part>
-			<part name="bourgogne" create-pbf="true" map-start-lat="47.322141" map-start-lon="5.040622">
-				<part name="cote-d-or" map-start-lat="47.323891" map-start-lon="5.042778"/>
-				<part name="nievre" map-start-lat="46.993301" map-start-lon="3.1572"/>
-				<part name="saone-et-loire" map-start-lat="46.306389" map-start-lon="4.831389"/>
-				<part name="yonne" map-start-lat="47.798332" map-start-lon="3.567778"/>
-			</part>
-			<part name="bretagne" create-pbf="true" map-start-lat="48.114358" map-start-lon="-1.680404">
-				<part name="cotes-d-armor" map-start-lat="48.514168" map-start-lon="-2.758889"/>
-				<part name="finistere" map-start-lat="47.996666" map-start-lon="-4.096389"/>
-				<part name="ille-et-vilaine" map-start-lat="48.116665" map-start-lon="-1.683333"/>
-				<part name="morbihan" map-start-lat="47.655834" map-start-lon="-2.760278"/>
-			</part>
-			<part name="centre-val-de-loire" create-pbf="true" map-start-lat="47.903225" map-start-lon="1.908724">
-				<part name="cher" map-start-lat="47.079723" map-start-lon="2.400556"/>
-				<part name="eure-et-loir" map-start-lat="48.443611" map-start-lon="1.485833"/>
-				<part name="indre" map-start-lat="46.810276" map-start-lon="1.691108"/>
-				<part name="indre-et-loire" map-start-lat="47.3936" map-start-lon="0.6892"/>
-				<part name="loir-et-cher" map-start-lat="47.593887" map-start-lon="1.328056"/>
-				<part name="loiret" map-start-lat="47.903057" map-start-lon="1.905"/>
-			</part>
-			<part name="champagne-ardenne" create-pbf="true" map-start-lat="48.95658" map-start-lon="4.363933">
-				<part name="ardennes" map-start-lat="49.772221" map-start-lon="4.719722"/>
-				<part name="aube" map-start-lat="48.299721" map-start-lon="4.079167"/>
-				<part name="haute-marne" map-start-lat="48.111668" map-start-lon="5.138889"/>
-				<part name="marne" map-start-lat="48.9575" map-start-lon="4.365"/>
-			</part>
-			<part name="corse" create-pbf="true" map-start-lat="41.943333" map-start-lon="8.736944">
-				<part name="corse-du-sud" map-start-lat="41.943333" map-start-lon="8.736944"/>
-				<part name="haute-corse" map-start-lat="42.701111" map-start-lon="9.450277"/>
-			</part>
-			<part name="franche-comte" create-pbf="true" map-start-lat="47.237986" map-start-lon="6.023962">
-				<part name="doubs" map-start-lat="47.243057" map-start-lon="6.021945"/>
-				<part name="haute-saone" map-start-lat="47.623055" map-start-lon="6.155556"/>
-				<part name="jura" map-start-lat="46.675278" map-start-lon="5.554444"/>
-				<part name="territoire-de-belfort" map-start-lat="47.641666" map-start-lon="6.85"/>
-			</part>
-			<part name="guadeloupe" create-pbf="true" map-start-lat="16.0" map-start-lon="-61.716667"></part>
-			<part name="guyane" create-pbf="true" map-start-lat="4.933333" map-start-lon="-52.33332"></part>
-			<part name="haute-normandie" create-pbf="true" map-start-lat="49.443519" map-start-lon="1.098869">
-				<part name="eure" map-start-lat="49.0242" map-start-lon="1.1533"/>
-				<part name="seine-maritime" map-start-lat="49.44389" map-start-lon="1.103056"/>
-			</part>
-			<part name="ile-de-france" create-pbf="true" map-start-lat="48.856485" map-start-lon="2.352265">
-				<part name="essonne" map-start-lat="48.62389" map-start-lon="2.429445"/>
-				<part name="hauts-de-seine" map-start-lat="48.891388" map-start-lon="2.204444"/>
-				<part name="paris" map-start-lat="48.866665" map-start-lon="2.333055"/>
-				<part name="seine-et-marne" map-start-lat="48.5406" map-start-lon="2.66"/>
-				<part name="seine-saint-denis" map-start-lat="48.916668" map-start-lon="2.433333"/>
-				<part name="val-d-oise" map-start-lat="49.03611" map-start-lon="2.063056"/>
-				<part name="val-de-marne" map-start-lat="48.791111" map-start-lon="2.462778"/>
-				<part name="yvelines" map-start-lat="48.805279" map-start-lon="2.135"/>
-			</part>
-			<part name="languedoc-roussillon" create-pbf="true" map-start-lat="43.610923" map-start-lon="3.87668">
-				<part name="aude" map-start-lat="43.213055" map-start-lon="2.351944"/>
-				<part name="gard" map-start-lat="43.833332" map-start-lon="4.35"/>
-				<part name="herault" map-start-lat="43.611946" map-start-lon="3.877222"/>
-				<part name="lozere" map-start-lat="44.519444" map-start-lon="3.501389"/>
-				<part name="pyrenees-orientales" map-start-lat="42.698612" map-start-lon="2.895555"/>
-			</part>
-			<part name="limousin" create-pbf="true" map-start-lat="45.833255" map-start-lon="1.260359">
-				<part name="correze" map-start-lat="45.266388" map-start-lon="1.773056"/>
-				<part name="creuse" map-start-lat="46.166668" map-start-lon="1.866667"/>
-				<part name="haute-vienne" map-start-lat="45.816666" map-start-lon="1.25"/>
-			</part>
-			<part name="lorraine" create-pbf="true" map-start-lat="49.119796" map-start-lon="6.176183">
-				<part name="meurthe-et-moselle" map-start-lat="48.683334" map-start-lon="6.166667"/>
-				<part name="meuse" map-start-lat="48.766666" map-start-lon="5.15"/>
-				<part name="moselle" map-start-lat="49.120277" map-start-lon="6.177778"/>
-				<part name="vosges" map-start-lat="48.1744" map-start-lon="6.4512"/>
-			</part>
-			<part name="martinique" create-pbf="true" map-start-lat="14.599722" map-start-lon="-61.083057"></part>
-			<part name="mayotte" create-pbf="true" map-start-lat="-12.780556" map-start-lon="45.227779"></part>
-			<part name="midi-pyrenees" create-pbf="true" map-start-lat="43.604557" map-start-lon="1.443329">
-				<part name="ariege" map-start-lat="42.966389" map-start-lon="1.607778"/>
-				<part name="aveyron" map-start-lat="44.349998" map-start-lon="2.583333"/>
-				<part name="gers" map-start-lat="43.646389" map-start-lon="0.585556"/>
-				<part name="haute-garonne" map-start-lat="43.605278" map-start-lon="1.442778"/>
-				<part name="hautes-pyrenees" map-start-lat="43.233891" map-start-lon="0.075278"/>
-				<part name="lot" map-start-lat="44.450001" map-start-lon="1.433333"/>
-				<part name="tarn" map-start-lat="43.928055" map-start-lon="2.144167"/>
-				<part name="tarn-et-garonne" map-start-lat="44.018101" map-start-lon="1.3558"/>
-			</part>
-			<part name="nord-pas-de-calais" create-pbf="true" map-start-lat="50.629735" map-start-lon="3.057665">
-				<part name="nord" map-start-lat="50.637222" map-start-lon="3.063333"/>
-				<part name="pas-de-calais" map-start-lat="50.289722" map-start-lon="2.780833"/>
-			</part>
-			<part name="pays-de-la-loire" create-pbf="true" map-start-lat="47.218548" map-start-lon="-1.554437">
-				<part name="loire-atlantique" map-start-lat="47.218056" map-start-lon="-1.552778"/>
-				<part name="maine-et-loire" map-start-lat="47.47361" map-start-lon="-0.554167"/>
-				<part name="mayenne" map-start-lat="48.073334" map-start-lon="-0.768889"/>
-				<part name="sarthe" map-start-lat="48.02" map-start-lon="0.198889"/>
-				<part name="vendee" map-start-lat="46.670502" map-start-lon="-1.426"/>
-			</part>
-			<part name="picardie" create-pbf="true" map-start-lat="49.894275" map-start-lon="2.295542">
-				<part name="aisne" map-start-lat="49.563889" map-start-lon="3.624444"/>
-				<part name="oise" map-start-lat="49.433334" map-start-lon="2.083333"/>
-				<part name="somme" map-start-lat="49.900002" map-start-lon="2.3"/>
-			</part>
-			<part name="poitou-charentes" create-pbf="true" map-start-lat="46.58028" map-start-lon="0.34005">
-				<part name="charente" map-start-lat="45.650002" map-start-lon="0.160278"/>
-				<part name="charente-maritime" map-start-lat="46.161945" map-start-lon="-1.151111"/>
-				<part name="deux-sevres" map-start-lat="46.325832" map-start-lon="-0.460556"/>
-				<part name="vienne" map-start-lat="46.581944" map-start-lon="0.336111"/>
-			</part>
-			<part name="provence-alpes-cote-d-azur" create-pbf="true" map-start-lat="43.29534" map-start-lon="5.374632">
-				<part name="alpes-de-haute-provence" map-start-lat="44.093056" map-start-lon="6.236389"/>
-				<part name="alpes-maritimes" map-start-lat="43.702778" map-start-lon="7.269166"/>
-				<part name="bouches-du-rhone" map-start-lat="43.297501" map-start-lon="5.377222"/>
-				<part name="hautes-alpes" map-start-lat="44.559444" map-start-lon="6.078611"/>
-				<part name="var" map-start-lat="43.125832" map-start-lon="5.931389"/>
-				<part name="vaucluse" map-start-lat="43.949444" map-start-lon="4.808889"/>
-			</part>
-			<part name="reunion" create-pbf="true" map-start-lat="-20.879168" map-start-lon="55.448097"></part>
-			<part name="rhone-alpes" create-pbf="true" map-start-lat="45.763788" map-start-lon="4.835744">
-				<part name="ain" map-start-lat="46.205555" map-start-lon="5.228889"/>
-				<part name="ardeche" map-start-lat="44.735832" map-start-lon="4.6"/>
-				<part name="drome" map-start-lat="44.933334" map-start-lon="4.891667"/>
-				<part name="haute-savoie" map-start-lat="45.900002" map-start-lon="6.130278"/>
-				<part name="isere" map-start-lat="45.187778" map-start-lon="5.726944"/>
-				<part name="loire" map-start-lat="45.434723" map-start-lon="4.390278"/>
-				<part name="rhone" map-start-lat="45.759724" map-start-lon="4.842222"/>
-				<part name="savoie" map-start-lat="45.57" map-start-lon="5.911667"/>
-			</part>
+			<part name="alsace" create-pbf="true" map-start-lat="48.079283" map-start-lon="7.359509"/>
+			<part name="aquitaine" create-pbf="true" map-start-lat="44.837856" map-start-lon="-0.580516"/>
+			<part name="auvergne" create-pbf="true" map-start-lat="45.777521" map-start-lon="3.086557"/>
+			<part name="basse-normandie" create-pbf="true" map-start-lat="49.182643" map-start-lon="-0.370638"/>
+			<part name="bourgogne" create-pbf="true" map-start-lat="47.322141" map-start-lon="5.040622"/>
+			<part name="bretagne" create-pbf="true" map-start-lat="48.114358" map-start-lon="-1.680404"/>
+			<part name="centre-val-de-loire" create-pbf="true" map-start-lat="47.903225" map-start-lon="1.908724"/>
+			<part name="champagne-ardenne" create-pbf="true" map-start-lat="48.95658" map-start-lon="4.363933"/>
+			<part name="corse" create-pbf="true" map-start-lat="41.943333" map-start-lon="8.736944"/>
+			<part name="franche-comte" create-pbf="true" map-start-lat="47.237986" map-start-lon="6.023962"/>
+			<part name="guadeloupe" create-pbf="true" map-start-lat="16.0" map-start-lon="-61.716667"/>
+			<part name="guyane" create-pbf="true" map-start-lat="4.933333" map-start-lon="-52.33332"/>
+			<part name="haute-normandie" create-pbf="true" map-start-lat="49.443519" map-start-lon="1.098869"/>
+			<part name="ile-de-france" create-pbf="true" map-start-lat="48.856485" map-start-lon="2.352265"/>
+			<part name="languedoc-roussillon" create-pbf="true" map-start-lat="43.610923" map-start-lon="3.87668"/>
+			<part name="limousin" create-pbf="true" map-start-lat="45.833255" map-start-lon="1.260359"/>
+			<part name="lorraine" create-pbf="true" map-start-lat="49.119796" map-start-lon="6.176183"/>
+			<part name="martinique" create-pbf="true" map-start-lat="14.599722" map-start-lon="-61.083057"/>
+			<part name="mayotte" create-pbf="true" map-start-lat="-12.780556" map-start-lon="45.227779"/>
+			<part name="midi-pyrenees" create-pbf="true" map-start-lat="43.604557" map-start-lon="1.443329"/>
+			<part name="nord-pas-de-calais" create-pbf="true" map-start-lat="50.629735" map-start-lon="3.057665"/>
+			<part name="pays-de-la-loire" create-pbf="true" map-start-lat="47.218548" map-start-lon="-1.554437"/>
+			<part name="picardie" create-pbf="true" map-start-lat="49.894275" map-start-lon="2.295542"/>
+			<part name="poitou-charentes" create-pbf="true" map-start-lat="46.58028" map-start-lon="0.34005"/>
+			<part name="provence-alpes-cote-d-azur" create-pbf="true" map-start-lat="43.29534" map-start-lon="5.374632"/>
+			<part name="reunion" create-pbf="true" map-start-lat="-20.879168" map-start-lon="55.448097"/>
+			<part name="rhone-alpes" create-pbf="true" map-start-lat="45.763788" map-start-lon="4.835744"/>
 		</part>
 
 		<part name="great_britain" create-pbf="true" map-start-lat="51.499266" map-start-lon="-0.124787">
