@@ -301,6 +301,8 @@
 		    <part name="saskatchewan" map-start-lat="50.4622" map-start-lon="-104.6369"/>
 		    <part name="yukon" map-start-lat="60.7242" map-start-lon="-135.0559"/>
 		</part>
+
+	    <part name="mexico" map-start-lat="19.433333" map-start-lon="-99.133333"/>
 	</part>
 
 	<!-- South America -->
