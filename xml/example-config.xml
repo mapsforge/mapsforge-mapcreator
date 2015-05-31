@@ -5,7 +5,7 @@
         osmosis-path="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.40.1/bin/osmosis"
         default-preferred-language="en">
 
-	<!-- RUSSIA straddles Asia and Europe -->
+	<!-- Russia (top level as it straddles Asia and Europe) -->
 	<part name="russia" create-pbf="true" create-map="false" map-start-lat="55.75" map-start-lon="37.62">
 		<part name="central-federal-district" create-pbf="true" create-map="false" map-start-lat="55.75" map-start-lon="37.62" defines-hierarchy="false">
 			<part name="belgorodskaya" map-start-lat="50.6" map-start-lon="36.6"/>
@@ -46,7 +46,7 @@
 			<part name="novgorodskaya" map-start-lat="58.55" map-start-lon="31.28"/>
 			<part name="pskovskaya" map-start-lat="57.82" map-start-lon="28.33"/>
 		</part>
-		<part name="far-eastern-federal-district" create-pbf="false" map-start-lat="48.48" map-start-lon="135.07" defines-hierarchy="false">
+		<part name="far-eastern-federal-district" create-pbf="true" map-start-lat="48.48" map-start-lon="135.07" defines-hierarchy="false">
 			<part name="amurskaya" map-start-lat="50.37" map-start-lon="127.52"/>
 			<part name="yevreyskaya" map-start-lat="48.8" map-start-lon="132.93"/>
 			<part name="kamchatsky" map-start-lat="53.02" map-start-lon="158.65"/>
@@ -106,8 +106,9 @@
 		</part>
 	</part>
 
-	<!-- EUROPE -->
+	<!-- Europe -->
 	<part name="europe" create-pbf="true" create-map="false">
+		<!-- Germany -->
 		<part name="germany" create-pbf="true" type="hd" map-start-lat="52.525582" map-start-lon="13.370061">
 			<part name="baden-wuerttemberg" map-start-lat="48.784092" map-start-lon="9.181652"/>
 			<part name="bayern" map-start-lat="48.140203" map-start-lon="11.558347"/>
@@ -127,6 +128,7 @@
 			<part name="thueringen" map-start-lat="50.972535" map-start-lon="11.038556"/>
 		</part>
 
+		<!-- France -->
 		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
 			<part name="alsace" map-start-lat="48.079283" map-start-lon="7.359509"/>
 			<part name="aquitaine" map-start-lat="44.837856" map-start-lon="-0.580516"/>
@@ -157,8 +159,9 @@
 			<part name="rhone-alpes" map-start-lat="45.763788" map-start-lon="4.835744"/>
 		</part>
 
+		<!-- Great Britain -->
 		<part name="great_britain" create-pbf="true" map-start-lat="51.499266" map-start-lon="-0.124787">
-			<part name="england" create-map="true" map-start-lat="51.50728" map-start-lon="-0.12766" defines-hierarchy="false">
+			<part name="england" map-start-lat="51.50728" map-start-lon="-0.12766" defines-hierarchy="false">
 			    <part name="greater_london" map-start-lat="51.50728" map-start-lon="-0.12766"/>
 			</part>
 			<part name="scotland" map-start-lat="55.94834" map-start-lon="-3.19327"/>
@@ -209,15 +212,11 @@
 		<part name="switzerland" map-start-lat="46.948395" map-start-lon="7.445351"/>
 		<part name="turkey" map-start-lat="41.005358" map-start-lon="28.978415"/>
 		<part name="ukraine" map-start-lat="50.4554" map-start-lon="30.532"/>
-		<!-- <part name="" map-start-lat="" map-start-lon=""/> -->
-
 	</part>
 
-
-	<!-- NORTH AMERICA -->
+	<!-- North America -->
 	<part name="north-america" create-map="false">
-
-	    <!-- UNITED STATES -->
+	    <!-- United States -->
 		<part name="us" create-map="false">
 			<part name="us-west" create-pbf="true" create-map="false" defines-hierarchy="false">
 				<part name="arizona" map-start-lat="33.44838" map-start-lon="-112.07404" />
@@ -280,13 +279,13 @@
 				<part name="vermont" map-start-lat="44.2629" map-start-lon="-72.5803" />
 			</part>
 
-			<part name="us-pacific" create-pbf="true" create-map="true" map-start-lat="21.3068" map-start-lon="-157.855"
-				defines-hierarchy="false">
+			<part name="us-pacific" create-pbf="true" map-start-lat="21.3068" map-start-lon="-157.855" defines-hierarchy="false">
 				<part name="hawaii" map-start-lat="21.3068" map-start-lon="-157.855" />
 			</part>
 			<part name="alaska" map-start-lat="58.302" map-start-lon="-134.4197" />
 		</part>
 
+		<!-- Canada -->
 		<part name="canada" create-pbf="true" create-map="false">
 		    <part name="alberta" map-start-lat="53.5292" map-start-lon="-113.4034"/>
 		    <part name="british-columbia" map-start-lat="48.4209" map-start-lon="-123.3277"/>
@@ -304,6 +303,7 @@
 		</part>
 	</part>
 
+	<!-- South America -->
 	<part name="south-america" create-pbf="true" create-map="false">
 	    <part name="argentina" map-start-lat="-34.6023" map-start-lon="-58.4489"/>
 	    <part name="bolivia" map-start-lat="-19.04201" map-start-lon="-65.25634"/>
@@ -319,6 +319,7 @@
     <part name="australia-oceania" map-start-lat="-33.8545" map-start-lon="151.2196"/>
     <part name="africa" map-start-lat="30.05" map-start-lon="31.2414"/>
 
+	<!-- Asia -->
 	<part name="asia" create-pbf="true" create-map="false">
 	    <part name="azerbaijan" map-start-lat="40.3818" map-start-lon="49.8967"/>
 	    <part name="china" map-start-lat="39.9073" map-start-lon="116.3848"/>
