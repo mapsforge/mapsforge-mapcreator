@@ -324,7 +324,13 @@
 	    <part name="haiti-and-domrep" map-start-lat="19" map-start-lon="-71"/>
 	</part>
 
-    <part name="australia-oceania" map-start-lat="-33.8545" map-start-lon="151.2196"/>
+	<!-- Australia Oceania -->
+    <part name="australia-oceania" create-pbf="true" map-start-lat="-33.8545" map-start-lon="151.2196">
+	    <part name="australia" map-start-lat="-35.308" map-start-lon="149.1245"/>
+	    <part name="new-caledonia" map-start-lat="-22.266667" map-start-lon="166.466667"/>
+	    <part name="new-zealand" map-start-lat="-41.283333" map-start-lon="174.45"/>
+    </part>
+
     <part name="africa" map-start-lat="30.05" map-start-lon="31.2414"/>
 
 	<!-- Asia -->
