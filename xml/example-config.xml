@@ -315,7 +315,13 @@
 	    <part name="uruguay" map-start-lat="-34.87" map-start-lon="-56.15"/>
 	</part>
 
-	<part name="central-america" map-start-lat="19.4392" map-start-lon="-99.129"/>
+	<!-- Central America -->
+	<part name="central-america" create-pbf="true" map-start-lat="19.4392" map-start-lon="-99.129">
+	    <part name="belize" map-start-lat="17.25" map-start-lon="-88.766667"/>
+	    <part name="guatemala" map-start-lat="14.633333" map-start-lon="-90.5"/>
+	    <part name="haiti-and-domrep" map-start-lat="19" map-start-lon="-71"/>
+	</part>
+
     <part name="australia-oceania" map-start-lat="-33.8545" map-start-lon="151.2196"/>
     <part name="africa" map-start-lat="30.05" map-start-lon="31.2414"/>
 
