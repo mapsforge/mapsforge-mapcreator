@@ -46,7 +46,7 @@
 			<part name="novgorodskaya" map-start-lat="58.55" map-start-lon="31.28"/>
 			<part name="pskovskaya" map-start-lat="57.82" map-start-lon="28.33"/>
 		</part>
-		<part name="far-eastern-federal-district" create-pbf="true" map-start-lat="48.48" map-start-lon="135.07" defines-hierarchy="false">
+		<part name="far-eastern-federal-district" create-pbf="true" create-map="false" map-start-lat="48.48" map-start-lon="135.07" defines-hierarchy="false">
 			<part name="amurskaya" map-start-lat="50.37" map-start-lon="127.52"/>
 			<part name="yevreyskaya" map-start-lat="48.8" map-start-lon="132.93"/>
 			<part name="kamchatsky" map-start-lat="53.02" map-start-lon="158.65"/>
