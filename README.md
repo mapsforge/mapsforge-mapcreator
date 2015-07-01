@@ -56,8 +56,9 @@ For all options see https://github.com/mapsforge/mapsforge-mapcreator/blob/maste
 Notes
 -----
  - This script will not download the initial file, e.g. [planet pbf](https://wiki.openstreetmap.org/wiki/Planet.osm). 
- - You will need a working osmosis installation
+ - You will need a working [Osmosis](http://wiki.openstreetmap.org/wiki/Osmosis) installation
  - You will need the mapsforge writer installed
+ - Requirements: [GDAL](http://www.gdal.org/) , [Shapely](http://toblerity.org/shapely/)
  - If you are making something like a world map, you might consider the zoom-interval-config setting as well as the land-simplification setting, which reduces the number of nodes in the land borders (higher=more simplification).
  - It might be worthwhile to first try this process without any changes applied and full planet.pbf file, to rule out any configuration problems.
 
