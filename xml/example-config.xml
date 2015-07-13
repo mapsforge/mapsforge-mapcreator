@@ -368,6 +368,7 @@
 	    <part name="nepal" map-start-lat="27.7" map-start-lon="85.333333"/>
 	    <part name="pakistan" map-start-lat="33.6929" map-start-lon="73.061"/>
 	    <part name="philippines" map-start-lat="14.592" map-start-lon="120.981"/>
+	    <part name="south-korea" map-start-lat="37.566667" map-start-lon="126.966667"/>
 	    <part name="taiwan" map-start-lat="25.0408" map-start-lon="121.5677"/>
 	    <part name="thailand" map-start-lat="13.753" map-start-lon="100.5"/>
 	    <part name="turkmenistan" map-start-lat="37.9483" map-start-lon="58.3786"/>
