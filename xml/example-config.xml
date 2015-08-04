@@ -128,7 +128,7 @@
 			<part name="thueringen" map-start-lat="50.972535" map-start-lon="11.038556"/>
 		</part>
 
-		<!-- France -->
+		<!-- France (inside Europe regions) -->
 		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
 			<part name="alsace" map-start-lat="48.079283" map-start-lon="7.359509"/>
 			<part name="aquitaine" map-start-lat="44.837856" map-start-lon="-0.580516"/>
@@ -140,22 +140,17 @@
 			<part name="champagne-ardenne" map-start-lat="48.95658" map-start-lon="4.363933"/>
 			<part name="corse" map-start-lat="41.943333" map-start-lon="8.736944"/>
 			<part name="franche-comte" map-start-lat="47.237986" map-start-lon="6.023962"/>
-			<part name="guadeloupe" map-start-lat="16.0" map-start-lon="-61.716667"/>
-			<part name="guyane" map-start-lat="4.933333" map-start-lon="-52.33332"/>
 			<part name="haute-normandie" map-start-lat="49.443519" map-start-lon="1.098869"/>
 			<part name="ile-de-france" map-start-lat="48.856485" map-start-lon="2.352265"/>
 			<part name="languedoc-roussillon" map-start-lat="43.610923" map-start-lon="3.87668"/>
 			<part name="limousin" map-start-lat="45.833255" map-start-lon="1.260359"/>
 			<part name="lorraine" map-start-lat="49.119796" map-start-lon="6.176183"/>
-			<part name="martinique" map-start-lat="14.599722" map-start-lon="-61.083057"/>
-			<part name="mayotte" map-start-lat="-12.780556" map-start-lon="45.227779"/>
 			<part name="midi-pyrenees" map-start-lat="43.604557" map-start-lon="1.443329"/>
 			<part name="nord-pas-de-calais" map-start-lat="50.629735" map-start-lon="3.057665"/>
 			<part name="pays-de-la-loire" map-start-lat="47.218548" map-start-lon="-1.554437"/>
 			<part name="picardie" map-start-lat="49.894275" map-start-lon="2.295542"/>
 			<part name="poitou-charentes" map-start-lat="46.58028" map-start-lon="0.34005"/>
 			<part name="provence-alpes-cote-d-azur" map-start-lat="43.29534" map-start-lon="5.374632"/>
-			<part name="reunion" map-start-lat="-20.879168" map-start-lon="55.448097"/>
 			<part name="rhone-alpes" map-start-lat="45.763788" map-start-lon="4.835744"/>
 		</part>
 
@@ -212,6 +207,18 @@
 		<part name="switzerland" map-start-lat="46.948395" map-start-lon="7.445351"/>
 		<part name="turkey" map-start-lat="41.005358" map-start-lon="28.978415"/>
 		<part name="ukraine" map-start-lat="50.4554" map-start-lon="30.532"/>
+	</part>
+
+	<!-- Europe (defines hierarchy) -->
+	<part name="europe" create-map="false">
+		<!-- France (outside Europe regions) -->
+		<part name="france" create-map="false">
+			<part name="guadeloupe" map-start-lat="16.0" map-start-lon="-61.716667"/>
+			<part name="guyane" map-start-lat="4.933333" map-start-lon="-52.33332"/>
+			<part name="martinique" map-start-lat="14.599722" map-start-lon="-61.083057"/>
+			<part name="mayotte" map-start-lat="-12.780556" map-start-lon="45.227779"/>
+			<part name="reunion" map-start-lat="-20.879168" map-start-lon="55.448097"/>
+		</part>
 	</part>
 
 	<!-- North America -->
