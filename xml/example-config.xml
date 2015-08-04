@@ -6,8 +6,8 @@
         default-preferred-language="en">
 
 	<!-- Russia (top level as it straddles Asia and Europe) -->
-	<part name="russia" create-pbf="true" create-map="false" map-start-lat="55.75" map-start-lon="37.62">
-		<part name="central-federal-district" create-pbf="true" create-map="false" map-start-lat="55.75" map-start-lon="37.62" defines-hierarchy="false">
+	<part name="russia" create-pbf="true" create-map="false">
+		<part name="central-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="belgorodskaya" map-start-lat="50.6" map-start-lon="36.6"/>
 			<part name="bryanskaya" map-start-lat="53.25" map-start-lon="34.37"/>
 			<part name="vladimirskaya" map-start-lat="56.13" map-start-lon="40.42"/>
@@ -26,7 +26,7 @@
 			<part name="tulskaya" map-start-lat="54.2" map-start-lon="37.62"/>
 			<part name="yaroslavskaya" map-start-lat="57.62" map-start-lon="39.85"/>
 		</part>
-		<part name="southern-federal-district" create-pbf="true" create-map="false" map-start-lat="47.23" map-start-lon="39.7" defines-hierarchy="false">
+		<part name="southern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="adygeya" map-start-lat="44.6" map-start-lon="40.08"/>
 			<part name="astrakhanskaya" map-start-lat="46.32" map-start-lon="48.04"/>
 			<part name="volgogradskaya" map-start-lat="48.7" map-start-lon="44.52"/>
@@ -34,7 +34,7 @@
 			<part name="krasnodarsky" map-start-lat="45.03" map-start-lon="38.97"/>
 			<part name="rostovskaya" map-start-lat="47.23" map-start-lon="39.7"/>
 		</part>
-		<part name="northwestern-federal-district" create-pbf="true" create-map="false" map-start-lat="59.95" map-start-lon="30.3" defines-hierarchy="false">
+		<part name="northwestern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="arkhangelskaya" map-start-lat="64.53" map-start-lon="40.53"/>
 			<part name="vologodskaya" map-start-lat="59.22" map-start-lon="39.9"/>
 			<part name="kaliningradskaya" map-start-lat="54.72" map-start-lon="20.52"/>
@@ -46,7 +46,7 @@
 			<part name="novgorodskaya" map-start-lat="58.55" map-start-lon="31.28"/>
 			<part name="pskovskaya" map-start-lat="57.82" map-start-lon="28.33"/>
 		</part>
-		<part name="far-eastern-federal-district" create-pbf="true" create-map="false" map-start-lat="48.48" map-start-lon="135.07" defines-hierarchy="false">
+		<part name="far-eastern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="amurskaya" map-start-lat="50.37" map-start-lon="127.52"/>
 			<part name="yevreyskaya" map-start-lat="48.8" map-start-lon="132.93"/>
 			<part name="kamchatsky" map-start-lat="53.02" map-start-lon="158.65"/>
@@ -57,7 +57,7 @@
 			<part name="khabarovsky" map-start-lat="48.48" map-start-lon="135.07"/>
 			<part name="chukotsky" map-start-lat="64.73" map-start-lon="177.52"/>
 		</part>
-		<part name="siberian-federal-district" create-pbf="true" create-map="false" map-start-lat="55.02" map-start-lon="82.93" defines-hierarchy="false">
+		<part name="siberian-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="altay" map-start-lat="51.95" map-start-lon="85.97"/>
 			<part name="altaysky" map-start-lat="53.33" map-start-lon="83.75"/>
 			<part name="buryatiya" map-start-lat="51.83" map-start-lon="107.6"/>
@@ -71,7 +71,7 @@
 			<part name="tuva" map-start-lat="51.72" map-start-lon="94.45"/>
 			<part name="khakasiya" map-start-lat="53.72" map-start-lon="91.42"/>
 		</part>
-		<part name="ural-federal-district" create-pbf="true" create-map="false" map-start-lat="56.83" map-start-lon="60.58" defines-hierarchy="false">
+		<part name="ural-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="kurganskaya" map-start-lat="55.47" map-start-lon="65.35"/>
 			<part name="sverdlovskaya" map-start-lat="56.83" map-start-lon="60.58"/>
 			<part name="tyumenskaya" map-start-lat="57.15" map-start-lon="65.53"/>
@@ -79,7 +79,7 @@
 			<part name="chelyabinskaya" map-start-lat="55.15" map-start-lon="61.38"/>
 			<part name="yamalo-nenetsky" map-start-lat="66.5" map-start-lon="66.6"/>
 		</part>
-		<part name="volga-federal-district" create-pbf="true" create-map="false" map-start-lat="56.33" map-start-lon="44.0" defines-hierarchy="false">
+		<part name="volga-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="bashkortostan" map-start-lat="54.75" map-start-lon="55.97"/>
 			<part name="kirovskaya" map-start-lat="58.6" map-start-lon="49.65"/>
 			<part name="mariy-el" map-start-lat="56.63" map-start-lon="47.87"/>
@@ -95,7 +95,7 @@
 			<part name="ulyanovskaya" map-start-lat="54.32" map-start-lon="48.37"/>
 			<part name="chuvashia" map-start-lat="56.15" map-start-lon="47.23"/>
 		</part>
-		<part name="north-caucasian-federal-district" create-pbf="true" create-map="false" map-start-lat="44.05" map-start-lon="43.07" defines-hierarchy="false">
+		<part name="north-caucasian-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
 			<part name="dagestan" map-start-lat="42.97" map-start-lon="47.5"/>
 			<part name="ingushetiya" map-start-lat="43.17" map-start-lon="44.82"/>
 			<part name="kabardino-balkariya" map-start-lat="43.48" map-start-lon="43.62"/>
