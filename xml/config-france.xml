@@ -41,7 +41,7 @@
 				<part name="ille-et-vilaine" map-start-lat="48.116665" map-start-lon="-1.683333"/>
 				<part name="morbihan" map-start-lat="47.655834" map-start-lon="-2.760278"/>
 			</part>
-			<part name="centre-val-de-loire" create-pbf="true" map-start-lat="47.903225" map-start-lon="1.908724">
+			<part name="centre" create-pbf="true" map-start-lat="47.903225" map-start-lon="1.908724">
 				<part name="cher" map-start-lat="47.079723" map-start-lon="2.400556"/>
 				<part name="eure-et-loir" map-start-lat="48.443611" map-start-lon="1.485833"/>
 				<part name="indre" map-start-lat="46.810276" map-start-lon="1.691108"/>
