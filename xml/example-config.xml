@@ -327,6 +327,7 @@
 	<!-- Central America -->
 	<part name="central-america" create-pbf="true" map-start-lat="19.4392" map-start-lon="-99.129">
 	    <part name="belize" map-start-lat="17.25" map-start-lon="-88.766667"/>
+            <part name="cuba" map-start-lat="21.950963" map-start-lon="-79.020577"/>
 	    <part name="guatemala" map-start-lat="14.633333" map-start-lon="-90.5"/>
 	    <part name="haiti-and-domrep" map-start-lat="19" map-start-lon="-71"/>
 	</part>
