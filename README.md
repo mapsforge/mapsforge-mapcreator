@@ -51,7 +51,7 @@ These are some of the more important options for each part:
  - **preferred-language** if creating maps for non-English environments, will take the language setting in OSM file first.
  
 
-For all options see https://github.com/mapsforge/mapsforge-mapcreator/blob/master/xml/mapcreator.xsd 
+For all options see https://github.com/mapsforge/mapsforge-mapcreator/blob/master/resources/mapcreator.xsd
 
 Notes
 -----

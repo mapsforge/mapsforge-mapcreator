@@ -305,7 +305,7 @@ def main():
     
     try:
         # load XML schema file
-        xmlschema_doc = ET.parse('xml/mapcreator.xsd')
+        xmlschema_doc = ET.parse('resources/mapcreator.xsd')
         xmlschema = XMLSchema(xmlschema_doc)
         parser = ET.XMLParser(schema=xmlschema,remove_comments=True)
         # try to load xml configuration, validate with schema    
