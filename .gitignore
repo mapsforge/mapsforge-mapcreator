@@ -25,9 +25,13 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
-/data
-/logs
-/maps
-/target
-/.project
-/.pydevproject
+data
+logs
+maps
+target
+.project
+.pydevproject
+
+# IntelliJ
+.idea
+*.iml
