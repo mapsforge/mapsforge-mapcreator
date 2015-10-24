@@ -8,3 +8,5 @@
 *.xml text
 *.js text
 *.css text
+*.poly text
+*.py text
