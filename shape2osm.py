@@ -40,7 +40,8 @@ will usually suffice.
 
 fixed_tags = {
   'natural': 'nosea',
-}  
+  'layer': '-5'
+}
 
 # Here are a number of functions: These functions define tag mappings. The API
 # For these functions is that they are passed the attributes from a feature,
