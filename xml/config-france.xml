@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://mapsforge.org/mapcreator https://raw.githubusercontent.com/mapsforge/mapsforge-mapcreator/master/resources/mapcreator.xsd"
 	default-map-start-zoom="14" map-staging-path="maps"	pbf-staging-path="data" polygons-path="polygons" map-target-path="/web/ftp.mapsforge.org/public/maps"
 	logging-path="logs" initial-source-pbf="planet.osm.pbf" osmosis-path="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.40.1/bin/osmosis"
-	default-preferred-language="en">
+	default-preferred-languages="en">
 
 	<part name="europe" create-pbf="true" create-map="false">
 		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
