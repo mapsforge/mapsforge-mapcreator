@@ -24,7 +24,7 @@ The configuration file has a number of settings and path specifications in the t
 	xsi:schemaLocation="http://mapsforge.org/mapcreator mapcreator.xsd " default-map-start-zoom="14" map-staging-path="maps"
 	pbf-staging-path="data" polygons-path="polygons" map-target-path="/web/ftp.mapsforge.org/public/maps" logging-path="logs" initial-source-pbf="planet.osm.pbf"
         osmosis-path="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.40.1/bin/osmosis"
-        default-preferred-language="en">```
+        default-preferred-languages="en">```
         
 
 
@@ -48,7 +48,7 @@ These are some of the more important options for each part:
  - **map-start-zoom** start zoom level
  - **map-start-lat**
  - **map-start-lon** starting position, must be within polygon
- - **preferred-language** if creating maps for non-English environments, will take the language setting in OSM file first.
+ - **preferred-languages** if only one language is specified, it will be written if its tag is found, otherwise the default language will be written, if multiple comma separated languages are specified, the default language will be written, followed by the specified languages (if present and if different than the default).
  
 
 For all options see https://github.com/mapsforge/mapsforge-mapcreator/blob/master/resources/mapcreator.xsd

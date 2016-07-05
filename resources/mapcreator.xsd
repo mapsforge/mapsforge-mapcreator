@@ -43,7 +43,7 @@
     			</restriction>
     		</simpleType>
     	</attribute>
-    	<attribute name="preferred-language" type="string"></attribute>
+    	<attribute name="preferred-languages" type="string"></attribute>
     </complexType>
 
 
@@ -59,7 +59,7 @@
     	<attribute name="logging-path" type="string" use="required"></attribute>
     	<attribute name="initial-source-pbf" type="string" use="optional" default="planet.osm.pbf"></attribute>
     	<attribute name="osmosis-path" type="string" default="osmosis"></attribute>
-    	<attribute name="default-preferred-language" type="string" fixed="en"></attribute>
+    	<attribute name="default-preferred-languages" type="string" fixed="en"></attribute>
     	<attribute name="zoom-interval-conf" type="string" default=""></attribute>
     	<attribute name="land-simplification" type="float" default="0"></attribute>
     </complexType>
