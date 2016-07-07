@@ -128,7 +128,6 @@ class LandExtractor:
 
     def extract_land_polygons(self, region, data_dir, simplify=0):
         import subprocess
-        simplifiy = 0.2
         bbox = self.region_bbox(region)
         if simplify == 0:
             ogr_call = ["ogr2ogr", "-overwrite", "-skipfailures", "-clipsrc", str(bbox[0]), str(bbox[1]), str(bbox[2]), str(bbox[3]), os.path.join(self.output_dir, region.replace("/", "-")), os.path.join(data_dir, os.path.join(self.landfiles, "land_polygons.shp"))]
