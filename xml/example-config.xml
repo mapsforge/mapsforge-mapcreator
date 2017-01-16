@@ -343,6 +343,7 @@
     <part name="africa" create-pbf="true" map-start-lat="30.05" map-start-lon="31.2414">
 	    <part name="burkina_faso" map-start-lat="12.333333" map-start-lon="-1.666667"/>
 	    <part name="canary_islands" map-start-lat="28.1" map-start-lon="-15.4"/>
+	    <part name="egypt" map-start-lat="30.05" map-start-lon="31.233333"/>
 	    <part name="ethiopia" map-start-lat="9.016667" map-start-lon="38.75"/>
 	    <part name="guinea" map-start-lat="9.516667" map-start-lon="-13.7"/>
 	    <part name="guinea-bissau" map-start-lat="11.866667" map-start-lon="-15.6"/>
