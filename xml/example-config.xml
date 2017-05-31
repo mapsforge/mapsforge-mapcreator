@@ -361,6 +361,7 @@
 	<!-- Asia -->
 	<part name="asia" create-pbf="true" create-map="false">
 	    <part name="azerbaijan" map-start-lat="40.3818" map-start-lon="49.8967"/>
+	    <part name="cambodia" map-start-lat="11.55" map-start-lon="104.916667"/>
 	    <part name="china" map-start-lat="39.9073" map-start-lon="116.3848"/>
 	    <part name="gaza" map-start-lat="31.51" map-start-lon="34.4573"/>
 	    <part name="gcc_states" map-start-lat="25.2931" map-start-lon="51.5424"/>
