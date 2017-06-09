@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapcreator-config xmlns="http://mapsforge.org/mapcreator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://mapsforge.org/mapcreator https://raw.githubusercontent.com/mapsforge/mapsforge-mapcreator/master/resources/mapcreator.xsd"
-	default-map-start-zoom="14" map-staging-path="maps" pbf-staging-path="data" polygons-path="polygons" map-target-path="/web/ftp.mapsforge.org/public/maps"
-	logging-path="logs" initial-source-pbf="planet.osm.pbf" osmosis-path="/export/local-1/public/mapsforge/preprocessing/bin/osmosis-0.40.1/bin/osmosis"
-	default-preferred-languages="en">
-
+	default-map-start-zoom="14" map-staging-path="maps" 
+	pbf-staging-path="data" polygons-path="polygons" map-target-path="/productfiles/mapsforge/maps" logging-path="logs" initial-source-pbf="planet.osm.pbf"
+		   poi-staging-path="pois"
+		   poi-target-path="/productfiles/mapsforge/pois" 
+		   osmosis-path="/software/other/osmosis-download/bin/osmosis"
+	default-preferred-language="en">
 	<!-- Russia (top level as it straddles Asia and Europe) -->
-	<part name="russia" create-pbf="true" create-map="false">
-		<part name="central-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+	<part name="russia" type="hd" create-pbf="true" create-map="true">
+		<part name="central-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="belgorodskaya" map-start-lat="50.6" map-start-lon="36.6"/>
 			<part name="bryanskaya" map-start-lat="53.25" map-start-lon="34.37"/>
 			<part name="vladimirskaya" map-start-lat="56.13" map-start-lon="40.42"/>
@@ -26,7 +28,7 @@
 			<part name="tulskaya" map-start-lat="54.2" map-start-lon="37.62"/>
 			<part name="yaroslavskaya" map-start-lat="57.62" map-start-lon="39.85"/>
 		</part>
-		<part name="southern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="southern-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="adygeya" map-start-lat="44.6" map-start-lon="40.08"/>
 			<part name="astrakhanskaya" map-start-lat="46.32" map-start-lon="48.04"/>
 			<part name="volgogradskaya" map-start-lat="48.7" map-start-lon="44.52"/>
@@ -34,7 +36,7 @@
 			<part name="krasnodarsky" map-start-lat="45.03" map-start-lon="38.97"/>
 			<part name="rostovskaya" map-start-lat="47.23" map-start-lon="39.7"/>
 		</part>
-		<part name="northwestern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="northwestern-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="arkhangelskaya" map-start-lat="64.53" map-start-lon="40.53"/>
 			<part name="vologodskaya" map-start-lat="59.22" map-start-lon="39.9"/>
 			<part name="kaliningradskaya" map-start-lat="54.72" map-start-lon="20.52"/>
@@ -46,7 +48,7 @@
 			<part name="novgorodskaya" map-start-lat="58.55" map-start-lon="31.28"/>
 			<part name="pskovskaya" map-start-lat="57.82" map-start-lon="28.33"/>
 		</part>
-		<part name="far-eastern-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="far-eastern-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="amurskaya" map-start-lat="50.37" map-start-lon="127.52"/>
 			<part name="yevreyskaya" map-start-lat="48.8" map-start-lon="132.93"/>
 			<part name="kamchatsky" map-start-lat="53.02" map-start-lon="158.65"/>
@@ -57,7 +59,7 @@
 			<part name="khabarovsky" map-start-lat="48.48" map-start-lon="135.07"/>
 			<part name="chukotsky" map-start-lat="64.73" map-start-lon="177.52"/>
 		</part>
-		<part name="siberian-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="siberian-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="altay" map-start-lat="51.95" map-start-lon="85.97"/>
 			<part name="altaysky" map-start-lat="53.33" map-start-lon="83.75"/>
 			<part name="buryatiya" map-start-lat="51.83" map-start-lon="107.6"/>
@@ -71,7 +73,7 @@
 			<part name="tuva" map-start-lat="51.72" map-start-lon="94.45"/>
 			<part name="khakasiya" map-start-lat="53.72" map-start-lon="91.42"/>
 		</part>
-		<part name="ural-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="ural-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="kurganskaya" map-start-lat="55.47" map-start-lon="65.35"/>
 			<part name="sverdlovskaya" map-start-lat="56.83" map-start-lon="60.58"/>
 			<part name="tyumenskaya" map-start-lat="57.15" map-start-lon="65.53"/>
@@ -79,7 +81,7 @@
 			<part name="chelyabinskaya" map-start-lat="55.15" map-start-lon="61.38"/>
 			<part name="yamalo-nenetsky" map-start-lat="66.5" map-start-lon="66.6"/>
 		</part>
-		<part name="volga-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="volga-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="bashkortostan" map-start-lat="54.75" map-start-lon="55.97"/>
 			<part name="kirovskaya" map-start-lat="58.6" map-start-lon="49.65"/>
 			<part name="mariy-el" map-start-lat="56.63" map-start-lon="47.87"/>
@@ -95,7 +97,7 @@
 			<part name="ulyanovskaya" map-start-lat="54.32" map-start-lon="48.37"/>
 			<part name="chuvashia" map-start-lat="56.15" map-start-lon="47.23"/>
 		</part>
-		<part name="north-caucasian-federal-district" create-pbf="true" create-map="false" defines-hierarchy="false">
+		<part name="north-caucasian-federal-district" create-pbf="false" create-map="false" defines-hierarchy="false">
 			<part name="dagestan" map-start-lat="42.97" map-start-lon="47.5"/>
 			<part name="ingushetiya" map-start-lat="43.17" map-start-lon="44.82"/>
 			<part name="kabardino-balkariya" map-start-lat="43.48" map-start-lon="43.62"/>
@@ -106,10 +108,11 @@
 		</part>
 	</part>
 
+
 	<!-- Europe -->
-	<part name="europe" create-pbf="true" create-map="false">
+	<part name="europe" create-pbf="false" create-map="false">
 		<!-- Germany -->
-		<part name="germany" create-pbf="true" type="hd" map-start-lat="52.525582" map-start-lon="13.370061">
+		<part name="germany" create-pbf="false" type="hd" map-start-lat="52.525582" map-start-lon="13.370061">
 			<part name="baden-wuerttemberg" map-start-lat="48.784092" map-start-lon="9.181652"/>
 			<part name="bayern" map-start-lat="48.140203" map-start-lon="11.558347"/>
 			<part name="berlin" map-start-lat="52.525582" map-start-lon="13.370061" />
@@ -129,7 +132,7 @@
 		</part>
 
 		<!-- France (inside Europe regions) -->
-		<part name="france" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
+		<part name="france" type="hd" create-pbf="true" map-start-lat="48.8614" map-start-lon="2.3606">
 			<part name="alsace" map-start-lat="48.079283" map-start-lon="7.359509"/>
 			<part name="aquitaine" map-start-lat="44.837856" map-start-lon="-0.580516"/>
 			<part name="auvergne" map-start-lat="45.777521" map-start-lon="3.086557"/>
@@ -183,9 +186,9 @@
 		<part name="iceland" map-start-lat="64.1473" map-start-lon="-21.9399"/>
 		<part name="ireland" map-start-lat="53.34931" map-start-lon="-6.26117"/>
 		<part name="isle_of_man" map-start-lat="54.14979" map-start-lon="-4.47801"/>
-		<part name="italy" map-start-lat="41.890522" map-start-lon="12.494245"/>
+		<part name="italy" type="hd" map-start-lat="41.890522" map-start-lon="12.494245"/>
 		<part name="kosovo" map-start-lat="42.657965" map-start-lon="21.153831"/>
-		<part name="latvia" map-start-lat="56.946999" map-start-lon="24.105227"/>
+		<part name="latvia" type="hd" map-start-lat="56.946999" map-start-lon="24.105227"/>
 		<part name="liechtenstein" map-start-lat="47.13871" map-start-lon="9.52093"/>
 		<part name="lithuania" map-start-lat="54.690106" map-start-lon="25.279799"/>
 		<part name="luxembourg" map-start-lat="49.612093" map-start-lon="6.131541"/>
@@ -194,7 +197,7 @@
 		<part name="moldova" map-start-lat="47.0321" map-start-lon="28.8362"/>
 		<part name="monaco" map-start-lat="43.7372" map-start-lon="7.4391"/>
 		<part name="montenegro" map-start-lat="42.439516" map-start-lon="19.266071"/>
-		<part name="netherlands" map-start-lat="52.084167" map-start-lon="4.3175"/>
+		<part name="netherlands" type="hd" map-start-lat="52.084167" map-start-lon="4.3175"/>
 		<part name="norway" map-start-lat="59.9133" map-start-lon="10.7391"/>
 		<part name="poland" map-start-lat="52.230073" map-start-lon="21.011395"/>
 		<part name="portugal" map-start-lat="41.150223" map-start-lon="-8.61032"/>
@@ -340,7 +343,7 @@
     </part>
 
 	<!-- Africa -->
-    <part name="africa" create-pbf="true" map-start-lat="30.05" map-start-lon="31.2414">
+    <part name="africa" type="hd" create-pbf="true" map-start-lat="30.05" map-start-lon="31.2414">
 	    <part name="burkina_faso" map-start-lat="12.333333" map-start-lon="-1.666667"/>
 	    <part name="canary_islands" map-start-lat="28.1" map-start-lon="-15.4"/>
 	    <part name="egypt" map-start-lat="30.05" map-start-lon="31.233333"/>
