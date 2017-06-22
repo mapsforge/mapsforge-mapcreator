@@ -181,6 +181,7 @@
 		<part name="estonia" map-start-lat="59.437177" map-start-lon="24.753227"/>
 		<part name="faroe_islands" map-start-lat="62.012" map-start-lon="-6.768"/>
 		<part name="finland" map-start-lat="60.1666" map-start-lon="24.9435"/>
+		<part name="georgia" map-start-lat="41.716667" map-start-lon="44.783333"/>
 		<part name="greece" map-start-lat="37.979166" map-start-lon="23.716682"/>
 		<part name="hungary" map-start-lat="47.498532" map-start-lon="19.040766"/>
 		<part name="iceland" map-start-lat="64.1473" map-start-lon="-21.9399"/>
