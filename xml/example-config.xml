@@ -163,7 +163,7 @@
 			    <part name="greater_london" map-start-lat="51.50728" map-start-lon="-0.12766"/>
 			</part>
 			<part name="scotland" map-start-lat="55.94834" map-start-lon="-3.19327"/>
-			<part name="wales" map-start-lat="51.48353" map-start-lon="-3.18369"></part>
+			<part name="wales" map-start-lat="51.48353" map-start-lon="-3.18369"/>
 		</part>
 
 		<part name="albania" map-start-lat="41.32737" map-start-lon="19.81864"/>

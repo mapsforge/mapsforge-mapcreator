@@ -1,66 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema targetNamespace="http://mapsforge.org/mapcreator" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://mapsforge.org/mapcreator">
 
-    <element name="mapcreator-config" type="tns:config"></element>
+	<element name="mapcreator-config" type="tns:config"/>
     
     <complexType name="part">
     	<sequence minOccurs="0" maxOccurs="unbounded">
-    		<element name="part" type="tns:part"></element>
+			<element name="part" type="tns:part"/>
     	</sequence>
-    	<attribute name="name" type="string" use="required"></attribute>
-    	<attribute name="create-map" type="boolean" default="true"></attribute>
-    	<attribute name="create-pbf" type="boolean" default="false"></attribute>
-    	<attribute name="defines-hierarchy" type="boolean" default="true" use="optional"></attribute>
+		<attribute name="name" type="string" use="required"/>
+		<attribute name="create-map" type="boolean" default="true"/>
+		<attribute name="create-pbf" type="boolean" default="false"/>
+		<attribute name="defines-hierarchy" type="boolean" default="true" use="optional"/>
     	<attribute name="type" default="ram">
     		<simpleType>
     			<restriction base="string">
-    				<enumeration value="ram"></enumeration>
-    				<enumeration value="hd"></enumeration>
+					<enumeration value="ram"/>
+					<enumeration value="hd"/>
     			</restriction>
     		</simpleType>
     	</attribute>
     	<attribute name="map-start-zoom" default="14">
     		<simpleType>
     			<restriction base="int">
-    				<minInclusive value="1"></minInclusive>
-    				<maxInclusive value="21"></maxInclusive>
+					<minInclusive value="1"/>
+					<maxInclusive value="21"/>
     			</restriction>
     		</simpleType>
     	</attribute>
     	<attribute name="map-start-lat">
     		<simpleType>
     			<restriction base="double">
-    				<minExclusive value="-90"></minExclusive>
-    				<maxExclusive value="90"></maxExclusive>
+					<minExclusive value="-90"/>
+					<maxExclusive value="90"/>
     			</restriction>
     		</simpleType>
     	</attribute>
     	<attribute name="map-start-lon">
     		<simpleType>
     			<restriction base="double">
-    				<minExclusive value="-180.0"></minExclusive>
-    				<maxExclusive value="180.0"></maxExclusive>
+					<minExclusive value="-180.0"/>
+					<maxExclusive value="180.0"/>
     			</restriction>
     		</simpleType>
     	</attribute>
-    	<attribute name="preferred-languages" type="string"></attribute>
+		<attribute name="preferred-languages" type="string"/>
     </complexType>
 
 
     <complexType name="config">
     	<sequence minOccurs="1" maxOccurs="unbounded">
-    		<element name="part" type="tns:part"></element>
+			<element name="part" type="tns:part"/>
     	</sequence>
-    	<attribute name="default-map-start-zoom" type="int" use="optional" default="14"></attribute>
-    	<attribute name="pbf-staging-path" type="string" use="optional" default="data"></attribute>
-    	<attribute name="map-staging-path" type="string" use="optional" default="maps"></attribute>
-    	<attribute name="map-target-path" type="string" use="required"></attribute>
-    	<attribute name="polygons-path" type="string" use="optional" default="polygons"></attribute>
-    	<attribute name="logging-path" type="string" use="required"></attribute>
-    	<attribute name="initial-source-pbf" type="string" use="optional" default="planet.osm.pbf"></attribute>
-    	<attribute name="osmosis-path" type="string" default="osmosis"></attribute>
-    	<attribute name="default-preferred-languages" type="string" fixed="en"></attribute>
-    	<attribute name="zoom-interval-conf" type="string" default=""></attribute>
-    	<attribute name="land-simplification" type="float" default="0"></attribute>
+		<attribute name="default-map-start-zoom" type="int" use="optional" default="14"/>
+		<attribute name="default-preferred-language" type="string" default="en"/>
+		<attribute name="pbf-staging-path" type="string" use="optional" default="data"/>
+		<attribute name="map-staging-path" type="string" use="optional" default="maps"/>
+		<attribute name="map-target-path" type="string" use="required"/>
+		<attribute name="polygons-path" type="string" use="optional" default="polygons"/>
+		<attribute name="logging-path" type="string" use="required"/>
+		<attribute name="initial-source-pbf" type="string" use="optional" default="planet.osm.pbf"/>
+		<attribute name="osmosis-path" type="string" default="osmosis"/>
+		<attribute name="poi-staging-path" type="string" default="poi-staging-path"/>
+		<attribute name="poi-target-path" type="string" default="poi-target-path"/>
+		<attribute name="default-preferred-languages" type="string" fixed="en"/>
+		<attribute name="zoom-interval-conf" type="string" default=""/>
+		<attribute name="land-simplification" type="float" default="0"/>
     </complexType>
 </schema>
