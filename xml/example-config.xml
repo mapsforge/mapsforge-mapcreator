@@ -364,6 +364,7 @@
 
 	<!-- Asia -->
 	<part name="asia" create-pbf="true" create-map="false">
+	    <part name="armenia" map-start-lat="40.183333" map-start-lon="44.516667"/>
 	    <part name="azerbaijan" map-start-lat="40.3818" map-start-lon="49.8967"/>
 	    <part name="cambodia" map-start-lat="11.55" map-start-lon="104.916667"/>
 	    <part name="china" map-start-lat="39.9073" map-start-lon="116.3848"/>
