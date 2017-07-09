@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mapcreator-config xmlns="http://mapsforge.org/mapcreator" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://mapsforge.org/mapcreator https://raw.githubusercontent.com/mapsforge/mapsforge-mapcreator/master/resources/mapcreator.xsd"
-	default-map-start-zoom="14" map-staging-path="maps" 
+	default-map-start-zoom="14" map-staging-path="maps"
 	pbf-staging-path="data" polygons-path="polygons" map-target-path="/productfiles/mapsforge/maps" logging-path="logs" initial-source-pbf="planet.osm.pbf"
 		   poi-staging-path="pois"
-		   poi-target-path="/productfiles/mapsforge/pois" 
+		   poi-target-path="/productfiles/mapsforge/pois"
 		   osmosis-path="/software/other/osmosis-download/bin/osmosis"
 	default-preferred-language="en">
 	<!-- Russia (top level as it straddles Asia and Europe) -->
@@ -381,6 +381,7 @@
 	    <part name="laos" map-start-lat="17.966667" map-start-lon="102.6"/>
 	    <part name="malaysia_singapore_brunei" map-start-lat="1.2991" map-start-lon="103.8466"/>
 	    <part name="mongolia" map-start-lat="47.9171" map-start-lon="106.9166"/>
+	    <part name="myanmar" map-start-lat="19.75" map-start-lon="96.1"/>
 	    <part name="nepal" map-start-lat="27.7" map-start-lon="85.333333"/>
 	    <part name="pakistan" map-start-lat="33.6929" map-start-lon="73.061"/>
 	    <part name="philippines" map-start-lat="14.592" map-start-lon="120.981"/>
