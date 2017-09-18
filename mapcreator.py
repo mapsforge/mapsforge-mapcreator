@@ -159,7 +159,7 @@ class MapCreator:
         
           
         osmosis_call = [self.osmosis_path, '--rb',source_pbf_path]
-        osmosis_call += ['--bp','completeWays=yes completeRelations=yes clipIncompleteEntities=false','file=%s'%polygons_path]
+        osmosis_call += ['--bp','completeWays=yes','completeRelations=yes','clipIncompleteEntities=false','file=%s'%polygons_path]
         osmosis_call += ['--wb','omitmetadata=false','compress=deflate','file=%s'%target_pbf_path]
         logfile_path = check_create_path(self.logging_path + staging_dir + current_part_name + '.pbf.log')
         logfile = open(logfile_path,'a')
@@ -200,7 +200,7 @@ class MapCreator:
             polygon_file_path = self.polygons_path+ staging_dir+current_part_name + '.poly'
             if not PATH.exists(polygon_file_path):
                 raise ProcessingException('cannot create map %s, polygon is missing: %s' % (map_file, polygon_file_path))
-            osmosis_call += ['--bp', 'completeWays=yes completeRelations=yes clipIncompleteEntities=false','file=%s'%polygon_file_path]
+            osmosis_call += ['--bp','completeWays=yes','completeRelations=yes','clipIncompleteEntities=false','file=%s'%polygon_file_path]
         
         # read in the sea and land areas
         sea_path = self.landExtractor.sea_path(staging_dir + current_part_name)
