@@ -1,6 +1,8 @@
 Create your own Mapsforge maps with MapCreator
 ==============================================
 
+**For the new process using Geofabrik see [here](https://github.com/mapsforge/mapsforge-creator).**
+
 With the coastline and water issues, creating a mapsforge map is not as simple as it should be, but here we offer a scripted solution that includes these additional steps.
 
 Mapsforge uses the process described here to build maps for the download.mapsforge.org site. The process is run on a Linux machine with 8 cores, 24GB memory and 2TB of storage. The process has not been tested on any other operating system, running this on Windows or OSX will most likely require some changes. 
